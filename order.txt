@@ -17,7 +17,9 @@ git checkout branchName  注：切换到名字为branchName的分支
 **************************
 
 **************************
-git checkout childBranch   注：切换到本地的childBranch分支
+git checkout childBranch   注：切换到childBranch分支
 git push origin childBranch:farBranch   注：远程创建farBranch分支，并提交
 
+
+//dog
 
