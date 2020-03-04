@@ -1,9 +1,0 @@
-git status    注：查看本地仓库的修改状态,不论是添加了文件或者文件夹，都可以看到
-git add filename  / git add foldername/filename  注：分别是单独添加文件或者添加了文件夹
-git commit -m "提交日志记录"
-git push
-
-**************************
-git rm --cached filename  注：取消标记
-git add filename运行后，再运行git status：添加的修改后的文本会变成绿色提醒，
-然后接着执行git rm --cached filename：相当于取消添加，再运行git status，又恢复成红色
