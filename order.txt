@@ -33,3 +33,11 @@ git push
 注：把someBranch的内容合并到currentBranch中
 **************************
 
+**************************
+git remote update origin --prune    注：更新远程分支列表
+**************************
+
+**************************
+git push origin --delete dogy    注：删除远程分支dogy
+git branch -d dogy                    注：删除本地分支dogy
+**************************
