@@ -26,5 +26,10 @@ git push origin childBranch:farBranch   注：远程创建farBranch分支，并提交
 git push --set-upstream origin childBranch    注：提交到某个分支上
 **************************
 
-//dog
+**************************
+当前所在的分支为currentBranch,
+git merge someBranch   
+git push
+注：把someBranch的内容合并到currentBranch中
+**************************
 
