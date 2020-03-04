@@ -1,7 +1,23 @@
 *不管创建的是gitlab还是github，首次使用时一定要首先配置SSH
+windows:
 1.在开始出运行：git bash ,随即进入git的命令窗口
 2.运行：cd ~/.ssh        注：不论以前是否运行过该命令，执行一次即可
 3.运行：mkdir ~/.ssh  注：在用户目录下会生成一个.ssh文件夹
 4.运行：ssh-keygen -t rsa -C "userName"  注：一直enter下去即可
 5.第三步生成的.ssh文件夹中会有id_rsa.pub，拷贝其中的内容到github中的
 Settings->SSH and GPG keys, 添加到 SSH keys即可
+
+ubuntu:
+lzb@lzb:~$ ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/lzb/.ssh/id_rsa):    //回车使用默认路径
+Enter passphrase (empty for no passphrase):                         //设置提交时使用的密码
+Enter same passphrase again: 
+Your identification has been saved in /home/lzb/.ssh/id_rsa.
+Your public key has been saved in /home/lzb/.ssh/id_rsa.pub.
+//这时候会生成~/.ssh目录，目录下面有id_rsa和id_rsa.pub两个文件，id_rsa为私钥，id_rsa.pub为公钥。
+//SSH 为 Secure Shell 的缩写，由 IETF 的网络小组（Network Working Group）所制定；SSH 为建立在应
+//用层基础上的安全协议。SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议。利用 SSH 协议
+//可以有效防止远程管理过程中的信息泄露问题。SSH最初是UNIX系统上的一个程序，后来又迅速扩展到其他操作平台。
+//SSH在正确使用时可弥补网络中的漏洞。SSH客户端适用于多种平台。几乎所有UNIX平台—包括HP-UX、Linux、AIX、
+//Solaris、Digital UNIX、Irix，以及其他平台，都可运行SSH。
