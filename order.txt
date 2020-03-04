@@ -5,5 +5,19 @@ git push
 
 **************************
 git rm --cached filename  注：取消标记
-git add filename运行后，再运行git status：添加的修改后的文本会变成绿色提醒，
-然后接着执行git rm --cached filename：相当于取消添加，再运行git status，又恢复成红色
+一旦执行该命令，所有的操作都取消了，提交需要重新执行：
+git add filename
+git commit -m "提交日志记录"
+**************************
+
+**************************
+git branch   注:查看所有分支名
+git checkout -b childBranch  注：创建一个名为childBranch的本地分支
+git checkout branchName  注：切换到名字为branchName的分支
+**************************
+
+**************************
+git checkout childBranch   注：切换到本地的childBranch分支
+git push origin childBranch:farBranch   注：远程创建farBranch分支，并提交
+
+
