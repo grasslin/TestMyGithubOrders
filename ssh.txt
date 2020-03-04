@@ -21,3 +21,6 @@ Your public key has been saved in /home/lzb/.ssh/id_rsa.pub.
 //可以有效防止远程管理过程中的信息泄露问题。SSH最初是UNIX系统上的一个程序，后来又迅速扩展到其他操作平台。
 //SSH在正确使用时可弥补网络中的漏洞。SSH客户端适用于多种平台。几乎所有UNIX平台—包括HP-UX、Linux、AIX、
 //Solaris、Digital UNIX、Irix，以及其他平台，都可运行SSH。
+
+
+//ssh
