@@ -1,0 +1,7 @@
+*不管创建的是gitlab还是github，首次使用时一定要首先配置SSH
+1.在开始出运行：git bash ,随即进入git的命令窗口
+2.运行：cd ~/.ssh        注：不论以前是否运行过该命令，执行一次即可
+3.运行：mkdir ~/.ssh  注：在用户目录下会生成一个.ssh文件夹
+4.运行：ssh-keygen -t rsa -C "userName"  注：一直enter下去即可
+5.第三步生成的.ssh文件夹中会有id_rsa.pub，拷贝其中的内容到github中的
+Settings->SSH and GPG keys, 添加到 SSH keys即可
