@@ -18,7 +18,7 @@ git checkout branchName  注：切换到名字为branchName的分支
 **************************
 
 **************************
-git checkout childBranch   注：切换到childBranch分支
+git checkout childBranch   注：切换到远程的childBranch分支
 git push origin childBranch:farBranch   注：远程创建farBranch分支，并提交
 **************************
 
@@ -41,3 +41,13 @@ git remote update origin --prune    注：更新远程分支列表
 git push origin --delete dogy    注：删除远程分支dogy
 git branch -d dogy                    注：删除本地分支dogy
 **************************
+
+**************************
+加如远程包含：master,branch01,branch02等分支
+git clone https://......    注：此时得到的代码一定是默认的master分支的
+git checkout branchi   注：代码会从master内容变更为branchi的内容
+**************************
+**************************
+git checkout -b locBranch origin/farBranch   注：创建本地分支locBranch，并切换，并且内容与origin/farBranch一致
+**************************
+
