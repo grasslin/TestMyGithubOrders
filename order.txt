@@ -1,0 +1,75 @@
+git status    注：查看本地仓库的修改状态,不论是添加了文件或者文件夹，都可以看到
+git add filename  / git add foldername/filename  注：分别是单独添加文件或者添加了文件夹
+git commit -m "提交日志记录"
+git push
+
+**************************
+git rm --cached filename  注：取消标记
+一旦执行该命令，所有的操作都取消了，提交需要重新执行：
+git add filename
+git commit -m "提交日志记录"
+**************************
+
+**************************
+git branch        注:查看本地所有分支名
+git branch  -a   注:查看远程所有分支名
+git checkout -b childBranch  注：创建一个名为childBranch的本地分支
+git checkout branchName  注：切换到名字为branchName的分支
+**************************
+
+**************************
+git checkout childBranch   注：切换到远程的childBranch分支
+git push origin childBranch:farBranch   注：远程创建farBranch分支，并提交
+**************************
+
+**************************
+git push --set-upstream origin childBranch    注：提交到某个分支上
+**************************
+
+**************************
+当前所在的分支为currentBranch,
+git merge someBranch   
+git push
+注：把someBranch的内容合并到currentBranch中
+**************************
+
+**************************
+git remote update origin --prune    注：更新远程分支列表
+**************************
+
+**************************
+git push origin --delete dogy    注：删除远程分支dogy
+git branch -d dogy                    注：删除本地分支dogy
+**************************
+
+**************************
+加如远程包含：master,branch01,branch02等分支
+git clone https://......    注：此时得到的代码一定是默认的master分支的
+git checkout branchi   注：代码会从master内容变更为branchi的内容
+**************************
+**************************
+git checkout -b locBranch origin/farBranch   注：创建本地分支locBranch，并切换，并且内容与origin/farBranch一致
+**************************
+
+**************************
+二、当master代码改动了，需要更新开发分支（dev）上的代码
+git checkout master 
+git pull 
+git checkout dev
+git merge master 
+git push -u origin dev
+**************************
+
+**************************
+git删除操作
+1.克隆远程仓库到本地库。
+例如使用ssh方法：
+git clone git@github.com:xxx/xxx.git
+2.对需要删除的文件、文件夹进行如下操作:
+git rm test.txt (删除文件)
+git rm -r test (删除文件夹)
+3.提交修改
+git commit -m "Delete some files."
+4.将修改提交到远程仓库的xxx分支:
+git push origin xxx
+**************************
