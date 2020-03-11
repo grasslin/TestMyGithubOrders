@@ -51,3 +51,16 @@ git checkout branchi   注：代码会从master内容变更为branchi的内容
 git checkout -b locBranch origin/farBranch   注：创建本地分支locBranch，并切换，并且内容与origin/farBranch一致
 **************************
 
+**************************
+git删除操作
+1.克隆远程仓库到本地库。
+例如使用ssh方法：
+git clone git@github.com:xxx/xxx.git
+2.对需要删除的文件、文件夹进行如下操作:
+git rm test.txt (删除文件)
+git rm -r test (删除文件夹)
+3.提交修改
+git commit -m "Delete some files."
+4.将修改提交到远程仓库的xxx分支:
+git push origin xxx
+**************************
